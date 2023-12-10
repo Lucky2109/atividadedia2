@@ -10,7 +10,7 @@ public class AtividadeDia2n4 {
 		
 	int mulhercis=0, homemcis=0, naobinario=0, mulhertrans=0, homemtrans=0, outros=0, backend=0, frontend=0, mobile=0, fullstack=0, genero=0, profissa=0;
 		
-		int i,idade = 0, idadesoma = 0, pessoas = 0, case1, case2;
+		int i,idade = 0, idadesoma = 0, pessoas = 0, casex, case2;
 		String confirmacao="S";
 		
 		System.out.println("1 – Mulher Cis\r\n"
@@ -45,50 +45,85 @@ public class AtividadeDia2n4 {
 			System.out.println("Deseja continuar a leitura de dados: ");
 			confirmacao =leia.nextLine();
 			
-			switch(case1) {
+			switch(casex) {
 		
 			
 		case 1: 
-			System.out.println("Digite o codigo de sua categoria: ");
+			System.out.println("Digite o codigo de seu genero: ");
 			profissa =leia.nextInt();
 	        mulhercis++;
-	        switch(case2) {
-	        
-	        case 1: 
-	        	backend++;
-	        	System.out.println("Deseja continuar a leitura de dados: ");
-				confirmacao =leia.nextLine();
 	        break;
-	        case 2: 
-	        	frontend++;
-	        	System.out.println("Deseja continuar a leitura de dados: ");
-				confirmacao =leia.nextLine();	
-				break;
-	        case 3: 
-	        	mobile++;
-	        	System.out.println("Deseja continuar a leitura de dados: ");
-				confirmacao =leia.nextLine();
-				break;
-	        case 4: 
-	        	fullstack++;
-	        	System.out.println("Deseja continuar a leitura de dados: ");
-				confirmacao =leia.nextLine();
-				break;
-	        default:
-	        	System.out.println("Opção invalida ");
-	        	
-	     
+	   
 	        
-	        }
-		
-		
-		
+		case 2: 
+			System.out.println("Digite o codigo de seu genero:  ");
+			profissa =leia.nextInt();
+	        homemcis++;
 	        break;
+	        
+		case 3: 
+			System.out.println("Digite o de seu genero:  ");
+			profissa =leia.nextInt();
+	        naobinario++;
+	        break;   
+	        
+		case 4: 
+			System.out.println("Digite o codigo de seu genero:  ");
+			profissa =leia.nextInt();
+	        mulhertrans++;
+	        break;
+		case 5: 
+			System.out.println("Digite o codigo de seu genero:  ");
+			profissa =leia.nextInt();
+	        homemtrans++;
+	        break;
+		case 6: 
+			System.out.println("Digite o de seu genero:  ");
+			profissa =leia.nextInt();
+	        homemcis++;
+	        break;
+	        
+		default:System.out.println("Codigo invalido");
+	        
+}
+			switch(case2) {
+			
+			
+			case 1: 
+				System.out.println("Digite o codigo de sua categoria: ");
+				profissa =leia.nextInt();
+		        mulhercis++;
+		        break;
+		   
+		        
+			case 2: 
+				System.out.println("Digite o codigo de sua categoria: ");
+				profissa =leia.nextInt();
+		        homemcis++;
+		        break;
+		        
+			case 3: 
+				System.out.println("Digite o codigo de sua categoria: ");
+				profissa =leia.nextInt();
+		        naobinario++;
+		        break;   
+		        
+			case 4: 
+				System.out.println("Digite o codigo de sua categoria: ");
+				profissa =leia.nextInt();
+		        mulhertrans++;
+		        break;
+			
+		        
+			default:System.out.println("Não temos essa profissão ");
+		        
+	}
+	      
 	    
 	        
 	        
 	        
-	    default:System.out.println("Não temos essa profissão ");
+	    
 		
 		}
 			
